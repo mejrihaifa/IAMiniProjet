@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Classification des images de mammographie {% endblock %}</h1>
+    <form method=post  action = "/success"  enctype=multipart/form-data>
+        <input type="file" name="file" />
+        <input type = "submit" value="Upload">
+{#        <div class="mb-3">#}
+{#            <label for="formFile" class="form-label"></label>#}
+{#            <input class="form-control" type="file" id="formFile">#}
+{#        </div>#}
+{##}
+{#        <div class="col-auto">#}
+{##}
+{#            <input type=submit class="btn btn-primary" value="Prédire la classe">#}
+{#        </div>#}
+    </form>
+
+
+{% endblock %}
